@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +233,7 @@
       <workItem from="1722071268825" duration="4108000" />
       <workItem from="1722110021459" duration="611000" />
       <workItem from="1722110635751" duration="2807000" />
-      <workItem from="1722255573296" duration="6901000" />
+      <workItem from="1722255573296" duration="8163000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
