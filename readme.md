@@ -17,3 +17,6 @@ https://symfony.com/download
 
 ### 26/07/24 :
 Initialisation de Docker.
+
+### 29/07/24 :
+Création de l'entité User avec la commande : symfony console make:user
