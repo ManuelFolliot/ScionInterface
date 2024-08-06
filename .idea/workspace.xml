@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Création des entités">
+    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Création des tests unitaires">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +235,9 @@
       <workItem from="1722110635751" duration="2807000" />
       <workItem from="1722255573296" duration="8863000" />
       <workItem from="1722367796548" duration="3240000" />
-      <workItem from="1722504662259" duration="2229000" />
+      <workItem from="1722504662259" duration="2862000" />
+      <workItem from="1722843529367" duration="5028000" />
+      <workItem from="1722940379907" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
@@ -286,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722289114003</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Création des tests unitaires">
+      <option name="closed" value="true" />
+      <created>1722548380048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722548380051</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +318,7 @@
     <MESSAGE value="Mise en place docker et ajout Readme" />
     <MESSAGE value="Modification symfony.yml pour que le pipeline s'effectue sur toutes les branches." />
     <MESSAGE value="Création des entités" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création des entités" />
+    <MESSAGE value="Création des tests unitaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création des tests unitaires" />
   </component>
 </project>
