@@ -13,6 +13,6 @@ class DefaultController extends AbstractController
     #[Route('/')]
     public function index(): Response
     {
-        return $this->render('base.html.twig');
+        return $this->render('main/index.html.twig');
     }
 }
