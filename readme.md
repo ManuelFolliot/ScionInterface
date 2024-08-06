@@ -22,4 +22,7 @@ Initialisation de Docker.
 Création de l'entité User avec la commande : symfony console make:user
 
 ### 30/07/24 :
-Création 
+Création des tests unitaires
+
+### 06/08/24 :
+Correction des tests unitaires
