@@ -9,13 +9,16 @@
         {% endblock %}
 
         {% block javascripts %}
+            {{ encore_entry_link_tags('app') }}
             {{ encore_entry_script_tags('app') }}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body>
+    <body class="min-h-screen flex flex-col">
         {% include "partials/header.html.twig" %}
-        {% block body %}{% endblock %}
+        <div class="flex-1 flex flex-col items-center p-4">
+            {% block body %}{% endblock %}
+        </div>
         {% include "partials/footer.html.twig" %}
     </body>
 </html>
