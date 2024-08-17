@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.background{
+    background-image: url("../img/ancient_egypt.jpg");
+}

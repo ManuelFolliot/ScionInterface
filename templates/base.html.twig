@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Scion Interface{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+            <title>{% block title %}Scion Interface{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNi4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjQgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTI3NC45IDM0LjNjLTI4LjEtMjguMS03My43LTI4LjEtMTAxLjggMEwzNC4zIDE3My4xYy0yOC4xIDI4LjEtMjguMSA3My43IDAgMTAxLjhMMTczLjEgNDEzLjdjMjguMSAyOC4xIDczLjcgMjguMSAxMDEuOCAwTDQxMy43IDI3NC45YzI4LjEtMjguMSAyOC4xLTczLjcgMC0xMDEuOEwyNzQuOSAzNC4zek0yMDAgMjI0YTI0IDI0IDAgMSAxIDQ4IDAgMjQgMjQgMCAxIDEgLTQ4IDB6TTk2IDIwMGEyNCAyNCAwIDEgMSAwIDQ4IDI0IDI0IDAgMSAxIDAtNDh6TTIyNCAzNzZhMjQgMjQgMCAxIDEgMC00OCAyNCAyNCAwIDEgMSAwIDQ4ek0zNTIgMjAwYTI0IDI0IDAgMSAxIDAgNDggMjQgMjQgMCAxIDEgMC00OHpNMjI0IDEyMGEyNCAyNCAwIDEgMSAwLTQ4IDI0IDI0IDAgMSAxIDAgNDh6bTk2IDMyOGMwIDM1LjMgMjguNyA2NCA2NCA2NGwxOTIgMGMzNS4zIDAgNjQtMjguNyA2NC02NGwwLTE5MmMwLTM1LjMtMjguNy02NC02NC02NGwtMTE0LjMgMGMxMS42IDM2IDMuMSA3Ny0yNS40IDEwNS41TDMyMCA0MTMuOGwwIDM0LjJ6TTQ4MCAzMjhhMjQgMjQgMCAxIDEgMCA0OCAyNCAyNCAwIDEgMSAwLTQ4eiIvPjwvc3ZnPg=="/> <!-- shortened for brevity -->
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -16,7 +16,7 @@
     </head>
     <body class="min-h-screen flex flex-col">
         {% include "partials/header.html.twig" %}
-        <div class="flex-1 flex flex-col items-center p-4">
+        <div class="flex-1 flex flex-col items-center p-4 background">
             {% block body %}{% endblock %}
         </div>
         {% include "partials/footer.html.twig" %}

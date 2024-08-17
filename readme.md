@@ -26,3 +26,6 @@ Création des tests unitaires avec symfony console make:unit-test
 
 ### 06/08/24 :
 Correction des tests unitaires. Tests effectués avec  php bin/phpunit --testdox
+
+### 17/08/24 :
+Initialisation login avec commande symfony console make:security:form-login
