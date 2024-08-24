@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Début travail front end page d'accueil">
-      <change afterPath="$PROJECT_DIR$/templates/main/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/news.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/signin.html.twig" afterDir="false" />
+    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Création page login + controller">
+      <change afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ScionInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScionInterface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/header.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +189,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -279,7 +283,10 @@
       <workItem from="1723204642188" duration="1192000" />
       <workItem from="1723573210186" duration="5530000" />
       <workItem from="1723819183701" duration="1791000" />
-      <workItem from="1723892887492" duration="7601000" />
+      <workItem from="1723892887492" duration="8252000" />
+      <workItem from="1723982784614" duration="4029000" />
+      <workItem from="1724257527998" duration="4217000" />
+      <workItem from="1724487835729" duration="6727000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
@@ -361,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723585440148</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Création page login + controller">
+      <option name="closed" value="true" />
+      <created>1723906036246</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723906036246</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +403,7 @@
     <MESSAGE value="Correction des tests unitaires" />
     <MESSAGE value="Configuration Tailwind css" />
     <MESSAGE value="Début travail front end page d'accueil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début travail front end page d'accueil" />
+    <MESSAGE value="Création page login + controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création page login + controller" />
   </component>
 </project>

@@ -29,3 +29,6 @@ Correction des tests unitaires. Tests effectués avec  php bin/phpunit --testdox
 
 ### 17/08/24 :
 Initialisation login avec commande symfony console make:security:form-login
+
+### 24/08/24 :
+Installation des fixtures avec la commande "composer require --dev orm-fixtures"
