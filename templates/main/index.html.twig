@@ -9,8 +9,14 @@
         <p>Créez votre personnage Scion et améliorez le au fil de ses aventures.</p>
     </div>
     <div class="m-2">
-        <a href="" class="bg-gray-800 text-white p-2">Se connecter</a>
-        <a href="" class="bg-gray-800 text-white p-2">S'inscrire</a>
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a class="bg-gray-800 text-white p-2" href="">Mon profil</a>
+            <a class="bg-gray-800 text-white p-2" href="">Mes personnages</a>
+            <a class="bg-gray-800 text-white p-2" href="">Mes campagnes</a>
+        {% else %}
+            <a href="" class="bg-gray-800 text-white p-2">Se connecter</a>
+            <a href="" class="bg-gray-800 text-white p-2">S'inscrire</a>
+        {% endif %}
     </div>
 
 

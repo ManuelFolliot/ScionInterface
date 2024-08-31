@@ -2,10 +2,21 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
+use Doctrine\DBAL\Exception\UniqueConstraintViolationException;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\FormBuilderInterface;
+use function Sodium\add;
 
 class SecurityController extends AbstractController
 {
@@ -21,6 +32,44 @@ class SecurityController extends AbstractController
         return $this->render('security/login.html.twig', [
             'last_username' => $lastUsername,
             'error' => $error,
+        ]);
+    }
+
+    #[Route(path: '/signup', name: 'app_signup')]
+    public function signup(Request $request, UserPasswordHasherInterface $passwordHasher, EntityManagerInterface $entityManager): \Symfony\Component\HttpFoundation\RedirectResponse|Response
+    {
+        $user = new User();
+        $form = $this->createFormBuilder($user)
+            ->add('email', EmailType::class)
+            ->add('pseudo')
+            ->add('password', RepeatedType::class, [
+                'type' => PasswordType::class,
+                'first_options' => ['label' => 'Password'],
+                'second_options' => ['label' => 'Repeat Password'],
+                'invalid_message' => 'The password fields must match.',
+            ])
+            ->add('submit', SubmitType::class, ['label' => 'Sign Up'])
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            try{
+                $hashedPassword = $passwordHasher->hashPassword($user, $user->getPassword());
+                $user->setPassword($hashedPassword);
+                $user->setRoles(['ROLE_USER']);
+                $entityManager->persist($user);
+                $entityManager->flush();
+
+                return $this->redirectToRoute('app_login');
+            } catch (UniqueConstraintViolationException $e){
+                $this->addFlash('error', $e->getMessage());
+            }
+
+        }
+
+        return $this->render('security/signup.html.twig', [
+            'registrationForm' => $form->createView(),
         ]);
     }
 

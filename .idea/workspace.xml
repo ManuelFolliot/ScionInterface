@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Création page login + controller">
-      <change afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ScionInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScionInterface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Ajout fixtures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/partials/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +200,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.compose.yaml.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.mailcatcher: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/homepage&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Manuel/PhpstormProjects/ScionInterface/assets/img&quot;,
@@ -228,9 +225,41 @@
       <recent name="C:\Users\Manuel\PhpstormProjects\ScionInterface\templates\main" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Docker.compose.yaml.database: Compose Deployment">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="database" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.mailcatcher: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mailcatcher" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -245,6 +274,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.compose.yaml.database: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.mailcatcher: Compose Deployment" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -286,7 +317,10 @@
       <workItem from="1723892887492" duration="8252000" />
       <workItem from="1723982784614" duration="4029000" />
       <workItem from="1724257527998" duration="4217000" />
-      <workItem from="1724487835729" duration="6727000" />
+      <workItem from="1724487835729" duration="9193000" />
+      <workItem from="1724516104478" duration="801000" />
+      <workItem from="1724596969857" duration="6447000" />
+      <workItem from="1725088464375" duration="9922000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
@@ -376,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723906036246</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Ajout fixtures">
+      <option name="closed" value="true" />
+      <created>1724513445853</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724513445853</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +446,7 @@
     <MESSAGE value="Configuration Tailwind css" />
     <MESSAGE value="Début travail front end page d'accueil" />
     <MESSAGE value="Création page login + controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création page login + controller" />
+    <MESSAGE value="Ajout fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout fixtures" />
   </component>
 </project>
