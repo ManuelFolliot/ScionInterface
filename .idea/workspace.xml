@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Ajout fixtures">
+    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Ajout signup fonctionnalité">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/header.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +318,9 @@
       <workItem from="1724487835729" duration="9193000" />
       <workItem from="1724516104478" duration="801000" />
       <workItem from="1724596969857" duration="6447000" />
-      <workItem from="1725088464375" duration="9922000" />
+      <workItem from="1725088464375" duration="11154000" />
+      <workItem from="1725308493765" duration="1478000" />
+      <workItem from="1725812296606" duration="5177000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
@@ -418,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724513445853</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ajout signup fonctionnalité">
+      <option name="closed" value="true" />
+      <created>1725133195962</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725133195964</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +455,7 @@
     <MESSAGE value="Début travail front end page d'accueil" />
     <MESSAGE value="Création page login + controller" />
     <MESSAGE value="Ajout fixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout fixtures" />
+    <MESSAGE value="Ajout signup fonctionnalité" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout signup fonctionnalité" />
   </component>
 </project>

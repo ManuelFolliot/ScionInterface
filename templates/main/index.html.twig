@@ -10,12 +10,12 @@
     </div>
     <div class="m-2">
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-            <a class="bg-gray-800 text-white p-2" href="">Mon profil</a>
-            <a class="bg-gray-800 text-white p-2" href="">Mes personnages</a>
-            <a class="bg-gray-800 text-white p-2" href="">Mes campagnes</a>
+            <a class="button-home" href="">Mon profil</a>
+            <a class="button-home" href="">Mes personnages</a>
+            <a class="button-home" href="">Mes campagnes</a>
         {% else %}
-            <a href="" class="bg-gray-800 text-white p-2">Se connecter</a>
-            <a href="" class="bg-gray-800 text-white p-2">S'inscrire</a>
+            <a href="" class="button-home">Se connecter</a>
+            <a href="" class="button-home">S'inscrire</a>
         {% endif %}
     </div>
 
