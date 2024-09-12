@@ -16,6 +16,8 @@ use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\Regex;
 use function Sodium\add;
 
 class SecurityController extends AbstractController
@@ -44,9 +46,22 @@ class SecurityController extends AbstractController
             ->add('pseudo')
             ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,
-                'first_options' => ['label' => 'Password'],
-                'second_options' => ['label' => 'Repeat Password'],
-                'invalid_message' => 'The password fields must match.',
+                'first_options' => [
+                    'label' => 'Password',
+                    'constraints' => [
+                        new Length([
+                            'min' => 12,
+                            'minMessage' => 'Votre mot de passe doit contenir au moins 12 caractères',
+                            'max' => 100
+                        ]),
+                        new Regex([
+                            'pattern' => '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/',
+                            'message' => 'Votre mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre et un caractère spécial',
+                        ]),
+                    ],
+                ],
+                'second_options' => ['label' => 'Confirmez votre mot de passe.'],
+                'invalid_message' => 'Les mots de passe doivent être identiques.',
             ])
             ->add('submit', SubmitType::class, ['label' => 'Sign Up'])
             ->getForm();
