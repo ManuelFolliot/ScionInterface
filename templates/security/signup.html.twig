@@ -11,18 +11,22 @@
     <div>
         {{ form_label(registrationForm.email, null, {'label_attr': {'class': 'form-label'}}) }}
         {{ form_widget(registrationForm.email, {'attr': {'class': 'form-field'}}) }}
+        {{ form_errors(registrationForm.email) }}
     </div>
     <div>
         {{ form_label(registrationForm.pseudo, null, {'label_attr': {'class': 'form-label'}}) }}
         {{ form_widget(registrationForm.pseudo, {'attr': {'class': 'form-field'}}) }}
+        {{ form_errors(registrationForm.pseudo) }}
     </div>
     <div>
         {{ form_label(registrationForm.password.first, null, {'label_attr': {'class': 'form-label'}}) }}
         {{ form_widget(registrationForm.password.first, {'attr': {'class': 'form-field'}}) }}
+        {{ form_errors(registrationForm.password.first) }}
     </div>
     <div>
         {{ form_label(registrationForm.password.second, null, {'label_attr': {'class': 'form-label'}}) }}
         {{ form_widget(registrationForm.password.second, {'attr': {'class': 'form-field'}}) }}
+        {{ form_errors(registrationForm.password.second) }}
     </div>
     <div>
         {{ form_widget(registrationForm.submit, {'attr': {'class': 'button-home'}}) }}

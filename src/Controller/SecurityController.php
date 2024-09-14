@@ -88,6 +88,20 @@ class SecurityController extends AbstractController
         ]);
     }
 
+    #[Route('/check-email', name: 'app_check_email')]
+    public function checkEmail(Request $request, EntityManagerInterface $entityManager): Response
+    {
+        $email = $request->get('email');
+
+        // on vérifie si un utilisateur avec cet email existe déjà
+        $user = $entityManager->getRepository(User::class)->findOneBy(['email' => $email]);
+        if($user){
+            return new Response('Cette adresse email est déjà prise.', Response::HTTP_CONFLICT);
+        }
+
+        return new Response('Email disponible', Response::HTTP_OK);
+    }
+
     #[Route(path: '/logout', name: 'app_logout')]
     public function logout(): void
     {

@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Ajout signup fonctionnalité">
+    <list default="true" id="68b8ad10-12a8-4b36-8bb6-64ae97d022ce" name="Changes" comment="Ajouts contraintes mot de passe">
+      <change afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +332,8 @@
       <workItem from="1725308493765" duration="1478000" />
       <workItem from="1725812296606" duration="5459000" />
       <workItem from="1725991275518" duration="1530000" />
-      <workItem from="1726161986145" duration="2807000" />
+      <workItem from="1726161986145" duration="2915000" />
+      <workItem from="1726317555008" duration="10528000" />
     </task>
     <task id="LOCAL-00001" summary="modification symfony.yml">
       <option name="closed" value="true" />
@@ -434,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725824858888</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ajouts contraintes mot de passe">
+      <option name="closed" value="true" />
+      <created>1726177757976</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1726177757976</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,6 +485,7 @@
     <MESSAGE value="Création page login + controller" />
     <MESSAGE value="Ajout fixtures" />
     <MESSAGE value="Ajout signup fonctionnalité" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout signup fonctionnalité" />
+    <MESSAGE value="Ajouts contraintes mot de passe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajouts contraintes mot de passe" />
   </component>
 </project>

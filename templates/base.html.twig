@@ -20,5 +20,9 @@
             {% block body %}{% endblock %}
         </div>
         {% include "partials/footer.html.twig" %}
+        <script>
+            const checkEmailUrl = "{{ path('app_check_email') }}"
+        </script>
+        <script src="{{ asset('../build/app.js') }}"></script>
     </body>
 </html>
