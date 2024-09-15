@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("Coucou ajax");
     //On détecte les changements dans le champ de l'email
     $('#email-field').on('input', function(){
         const email = $(this).val();

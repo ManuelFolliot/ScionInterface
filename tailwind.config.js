@@ -13,6 +13,7 @@ module.exports = {
             addComponents({
                 '.form-label': {
                     backgroundColor: '#1f2937',
+                    width: '50%',
                     padding: '0.25rem',
                     color: 'white',
                     display: 'block',
@@ -30,6 +31,13 @@ module.exports = {
                     '&:focus': {
                         boxShadow: '2px solid #3b82f6',
                     },
+                },
+                '.form-errors': {
+                    backgroundColor: '#1f2937',
+                    display: 'block',
+                    width: '100%',
+                    padding: '0.5rem',
+                    color: 'red',
                 },
                 '.button-home': {
                     backgroundColor: '#1f2937',

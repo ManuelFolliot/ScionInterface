@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
             <title>{% block title %}Scion Interface{% endblock %}</title>
@@ -20,9 +20,10 @@
             {% block body %}{% endblock %}
         </div>
         {% include "partials/footer.html.twig" %}
-        <script>
-            const checkEmailUrl = "{{ path('app_check_email') }}"
-        </script>
-        <script src="{{ asset('../build/app.js') }}"></script>
     </body>
+    <script>
+        const checkEmailUrl = "{{ path('app_check_email') }}"
+    </script>
+    <script src="{{ asset('build/index.js') }}"></script>
+    <script src="{{ asset('build/test.js') }}"></script>
 </html>

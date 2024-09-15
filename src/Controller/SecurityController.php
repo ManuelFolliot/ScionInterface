@@ -63,7 +63,7 @@ class SecurityController extends AbstractController
                 'second_options' => ['label' => 'Confirmez votre mot de passe.'],
                 'invalid_message' => 'Les mots de passe doivent être identiques.',
             ])
-            ->add('submit', SubmitType::class, ['label' => 'Sign Up'])
+            ->add('submit', SubmitType::class, ['label' => 'Valider'])
             ->getForm();
 
         $form->handleRequest($request);
